@@ -42,14 +42,70 @@ body {
     left: calc(var(--x) * (var(--cell-size) + var(--cell-gap)) + var(--cell-gap));
     background-color: hsl(112, 50%, var(--background-lightness));
     color: hsl(116, 25%, var(--text-lightness));
-    animation: show 220ms ease-in-out;
+    animation: show 180ms ease-in-out;
     transition: 110ms ease-in-out;
+    -webkit-animation: show 180ms ease-in-out;
+    -webkit-transition: 110ms ease-in-out;
+    -moz-animation: show 180ms ease-in-out;
+    -moz-transition: 110ms ease-in-out;
+    -o-animation: show 180ms ease-in-out;
+    -o-transition: 110ms ease-in-out;
+    -ms-animation: show 180ms ease-in-out;
+    -ms-transition: 110ms ease-in-out;
 }
 
 @keyframes show {
     0% {
         opacity: 0.5;
-        transform: scale(0)
+        transform: scale(0);
+    }
+    10% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@-webkit-keyframes show {
+    0% {
+        opacity: 0.5;
+        -webkit-transform: scale(0);
+    }
+    10% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+    }
+}
+
+@-moz-keyframes show {
+    0% {
+        opacity: 0.5;
+        -moz-transform: scale(0);
+    }
+    10% {
+        opacity: 1;
+        -moz-transform: scale(1);
+    }
+}
+
+@-o-keyframes show {
+    0% {
+        opacity: 0.5;
+        -o-transform: scale(0);
+    }
+    10% {
+        opacity: 1;
+        -o-transform: scale(1);
+    }
+}
+
+@-ms-keyframes show {
+    0% {
+        opacity: 0.5;
+        -ms-transform: scale(0);
+    }
+    10% {
+        opacity: 1;
+        -ms-transform: scale(1);
     }
 }
 
@@ -60,7 +116,11 @@ body {
     left: 0;
     right: 0;
     background: rgba(0, 0, 0, 0.7);
-    transition: opacity 500ms;
+    transition: opacity 200ms;
+    -moz-transition: opacity 200ms;
+    -o-transition: opacity 200ms;
+    -webkit-transition: opacity 200ms;
+    -ms-transition: opacity 200ms;
     visibility: hidden;
     opacity: 0;
 }
@@ -77,7 +137,11 @@ body {
     border-radius: 1vmin;
     width: 40%;
     position: relative;
-    transition: all 1.5s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
 }
 
 .gameover-alert .gameover-close {
@@ -85,6 +149,10 @@ body {
     top: 0.5em;
     right: 0.75em;
     transition: all 200ms;
+    -moz-transition: all 200ms;
+    -o-transition: all 200ms;
+    -webkit-transition: all 200ms;
+    -ms-transition: all 200ms;
     font-size: 7.5vmin;
     font-weight: bold;
     text-decoration: none;
