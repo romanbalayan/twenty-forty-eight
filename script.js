@@ -40,24 +40,24 @@ async function handleInput(e) {
         setupInput();
         return;
     }
-  }
-
-  switch (e) {
-    case "up":
-      await moveUp();
-      break;
-    case "down":
-      await moveDown();
-      break;
-    case "left":
-      await moveLeft();
-      break;
-    case "right":
-      await moveRight();
-      break;
-    default:
-      setupInput();
-      return;
+  } else {
+    switch (e) {
+      case "up":
+        await moveUp();
+        break;
+      case "down":
+        await moveDown();
+        break;
+      case "left":
+        await moveLeft();
+        break;
+      case "right":
+        await moveRight();
+        break;
+      default:
+        setupInput();
+        return;
+    }
   }
 
   grid.mergeTiles();
