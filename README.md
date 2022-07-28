@@ -7,3 +7,8 @@
   [**Live Demo →**](https://romanbalayan.github.io/twenty-forty-eight)
 
 </div>
+
+## Features
+
+- Mobile Responsive
+- Touch and Keyboard Controls
