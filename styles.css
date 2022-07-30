@@ -3,7 +3,6 @@
 }
 
 body {
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,7 +16,7 @@ body.dark {
 }
 
 h1 {
-    font-size: 1.3rem;
+    font-size: 2vh;
     font-family: 'Rock Salt', cursive;
     margin: 1rem;
     color: #242431;
