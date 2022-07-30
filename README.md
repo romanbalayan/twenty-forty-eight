@@ -15,3 +15,4 @@
 - Mobile Responsive
 - Touch and Keyboard Controls
 - Auto Restart
+- Dark Mode / Light Mode Theme Toggle
