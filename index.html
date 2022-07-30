@@ -1,30 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>twenty-forty-eight</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fuggles&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <script src="script.js" type="module"></script>
-</head>
+    <script src="themeswitch.js" type="module"></script>
+  </head>
 
-<body>
-    <div id="board">
+  <body>
+    <div id="game-container">
+      <div id="heading-container">
+        <div id="heading-title">
+          <h1
+            style="
+              font-size: 7vmin;
+              font-family: 'Fuggles', cursive;
+              margin: 2vmin;
+            "
+          >
+            twenty-forty-eight
+          </h1>
+        </div>
+        <div id="heading-controls">
+          <input type="checkbox" class="checkbox" id="checkbox" />
+          <label for="checkbox" class="checkbox-label">
+            <i class="fa-solid fa-moon"></i>
+            <i class="fa-solid fa-sun"></i>
+            <span class="ball"></span>
+          </label>
+        </div>
+      </div>
+      <div id="board-container">
+        <div id="board"></div>
+      </div>
     </div>
 
     <div id="gameover" class="overlay">
-        <div class="gameover-alert">
-            <a class="gameover-close" href="#">&times;</a>
-            <div class="gameover-text">
-                Game Over
-            </div>
-        </div>
+      <div class="gameover-alert">
+        <a class="gameover-close" href="#">&times;</a>
+        <div class="gameover-text">Game Over</div>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
